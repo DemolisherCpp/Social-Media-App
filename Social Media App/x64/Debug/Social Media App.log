@@ -1,3 +1,14 @@
 ﻿  Main Code.cpp
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Main Code.cpp(15,74): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Drawer.h(73,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Drawer.h(73,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Drawer.h(91,47): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Drawer.h(91,29): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Drawer.h(92,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Drawer.h(92,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Drawer.h(97,32): warning C4552: '-': result of expression not used
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(7,144): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(7,105): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(7,78): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(7,51): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Main Code.cpp(16,74): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
   Social Media App.vcxproj -> C:\Users\momer\source\repos\Social-Media-App\x64\Debug\Social Media App.exe

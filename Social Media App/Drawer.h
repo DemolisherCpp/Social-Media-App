@@ -1,3 +1,6 @@
+#ifndef DRAWER_H
+#define DRAWER_H
+
 #include<iostream>
 #include<SFML\Graphics.hpp>
 
@@ -31,6 +34,11 @@ texter::texter(std::string addpath = "Jersey Sharp.ttf", std::string message = "
 	text->setFillColor(sf::Color(r,g,b,alpha));
 	text->setPosition(sf::Vector2f(x,y));
 
+
+
+	sf::FloatRect coords = text->getLocalBounds();
+	text->setOrigin(coords.width / 2, coords.height / 2);
+
 }
 
 texter::~texter() {
@@ -43,14 +51,70 @@ sf::Text texter::data() {
 }
 
 class button {
-	sf::RectangleShape body;
+	sf::RectangleShape* body;
 	texter function;
+	sf::Texture* texture;
+	sf::Sprite* face;
 public:
-	void draw(sf::RenderWindow*);
+	button(std::string,float,float,int,int,float,float);
+	~button();
+	void intersect(sf::RenderWindow*, sf::Event*);
+	void operator > (sf::RenderWindow*);
+
 };
 
-void button::draw(sf::RenderWindow* place) {
-	place->draw(body);
-	place->draw(function.data());
+button::button(std :: string addpath = "user.png" ,float xsize=75, float ysize=75,int posx=303.5,int posy=540,float scaleoffacex=0.2,float scaleoffacey=0.2) {
+	body = new sf::RectangleShape;
+	texture = new sf::Texture;
+	face = new sf::Sprite;
 
+	body->setSize(sf::Vector2f(xsize,ysize));
+	body->setOrigin(xsize/2,ysize/2);
+	body->setPosition(posx, posy);
+
+
+
+	std::string path = "Resources\\Images\\";
+	path += addpath;
+	if (!texture->loadFromFile(path)) {
+		std::cout << "The image of one of the faces could not be loaded" << std::endl;
+		exit(0);
+	}
+
+
+	face->setTexture(*texture);
+
+
+	face->setOrigin(face->getLocalBounds().width / 2, face->getLocalBounds().height / 2);
+	scaleoffacex = xsize / face->getLocalBounds().width;
+	scaleoffacey = ysize / face->getLocalBounds().height;
+	face->setScale(scaleoffacex*0.8, scaleoffacey*0.8);
+	face->setPosition(posx, posy);
+
+
+	//text
+	//function.data().getFont().loadFromFile("Resources\\Fonts\\Inter.ttf");
+	body->getLocalBounds().height - face->getLocalBounds().height / 2;
 }
+
+button::~button() {
+	delete body;
+	delete texture;
+	delete face;
+}
+
+void button :: operator > (sf::RenderWindow* plane) {
+	plane->draw(*body);
+	plane->draw(function.data());
+	plane->draw(*face);
+}
+
+void button::intersect(sf::RenderWindow* plane, sf::Event* event) {
+	//if(sf::Mouse::getPosition(*plane).x>(body->getLocalBounds().width+body->))
+	if ((sf::Mouse::getPosition(*plane).x > (body->getPosition().x - body->getOrigin().x)) && (sf::Mouse::getPosition(*plane).x < (body->getPosition().x + body->getOrigin().x)) && (sf::Mouse::getPosition(*plane).y > (body->getPosition().y - body->getOrigin().y)) && (sf::Mouse::getPosition(*plane).y < (body->getPosition().y + body->getOrigin().y))) {
+		std::cout << "test accomplished";
+	}
+}
+
+
+#endif // DRAWER_H
