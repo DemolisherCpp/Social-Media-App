@@ -5,13 +5,13 @@ class texter {
 	sf::Text* text;
 	sf::Font* font;
 public:
-	texter(std::string, std::string);
+	texter(std::string, std::string,int,int,int,int,int,float,float);
 	~texter();
 	sf::Text data();
 
 };
 
-texter::texter(std::string addpath = "Jersey Sharp.ttf", std::string message = "No Name") {
+texter::texter(std::string addpath = "Jersey Sharp.ttf", std::string message = "No Name",int size=30,int r=255,int g=255,int b=255,int alpha=255,float x=50,float y=50) {
 	std::string path = "Resources\\Fonts\\";
 	path += addpath;
 
@@ -27,6 +27,9 @@ texter::texter(std::string addpath = "Jersey Sharp.ttf", std::string message = "
 	text->setFont(*font);
 
 	text->setString(message);
+	text->setCharacterSize(size);
+	text->setFillColor(sf::Color(r,g,b,alpha));
+	text->setPosition(sf::Vector2f(x,y));
 
 }
 
@@ -37,4 +40,17 @@ texter::~texter() {
 
 sf::Text texter::data() {
 	return *text;
+}
+
+class button {
+	sf::RectangleShape body;
+	texter function;
+public:
+	void draw(sf::RenderWindow*);
+};
+
+void button::draw(sf::RenderWindow* place) {
+	place->draw(body);
+	place->draw(function.data());
+
 }
