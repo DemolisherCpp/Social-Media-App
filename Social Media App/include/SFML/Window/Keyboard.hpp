@@ -54,7 +54,7 @@ public:
     enum Key
     {
         Unknown = -1, //!< Unhandled key
-        A = 0,        //!< The A key
+        A=0,        //!< The A key
         B,            //!< The B key
         C,            //!< The C key
         D,            //!< The D key
@@ -192,7 +192,7 @@ public:
         enum Scancode
         {
             Unknown = -1,       //!< Represents any scancode not present in this enum
-            A = 0,              //!< Keyboard a and A key
+            A=0,              //!< Keyboard a and A key
             B,                  //!< Keyboard b and B key
             C,                  //!< Keyboard c and C key
             D,                  //!< Keyboard d and D key
