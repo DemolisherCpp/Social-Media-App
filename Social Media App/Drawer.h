@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include<SFML\Graphics.hpp>
+#include<vector>
 
 class texter {
 	sf::Text* text;
@@ -11,10 +12,13 @@ public:
 	texter(std::string, std::string,int,int,int,int,int,float,float);
 	~texter();
 	sf::Text data();
+	void setmessage(std::string);
+	void setpos(float,float);
+	void setsize(int);
 
 };
 
-texter::texter(std::string addpath = "Jerse.ttf", std::string message = "No Name", int size = 30, int r = 255, int g = 255, int b = 255, int alpha = 255, float x = 50, float y = 50) {
+texter::texter(std::string addpath = "Inter.ttf", std::string message = "No Name", int size = 30, int r = 255, int g = 255, int b = 255, int alpha = 255, float x = 50, float y = 50) {
 	std::string path = "Resources\\Fonts\\";
 	path += addpath;
 
@@ -41,6 +45,18 @@ texter::texter(std::string addpath = "Jerse.ttf", std::string message = "No Name
 
 }
 
+void texter::setmessage(std::string a) {
+	text->setString(a);
+}
+
+void texter::setpos(float a, float b) {
+	text->setPosition(sf::Vector2f(a, b));
+}
+
+void texter::setsize(int a) {
+	text->setCharacterSize(a);
+}
+
 texter::~texter() {
 	delete text;
 	delete font;
@@ -52,7 +68,7 @@ sf::Text texter::data() {
 
 class button {
 	sf::RectangleShape* body;
-	texter function;
+	//texter function;
 	sf::Texture* texture;
 	sf::Sprite* face;
 	static int click;
@@ -65,7 +81,7 @@ public:
 	~button();
 	bool intersect(sf::RenderWindow*, sf::Event*);
 	void operator > (sf::RenderWindow*);
-	void write(sf::RenderWindow*, sf::Event*,char*);
+	bool write(sf::RenderWindow*, sf::Event*,char*);
 	
 
 };
@@ -102,15 +118,17 @@ button::button(std :: string addpath = "user.png" ,float xsize=75, float ysize=7
 		scaleoffacex = xsize / face->getLocalBounds().width;
 		scaleoffacey = ysize / face->getLocalBounds().height;
 	}
-	//scaleoffacex = xsize / face->getLocalBounds().width;
-	//scaleoffacey = ysize / face->getLocalBounds().height;
+	
+
 	face->setScale(scaleoffacex*0.8, scaleoffacey*0.8);
 	face->setPosition(posx, posy);
 
 
 	//text
-	//function.data().getFont().loadFromFile("Resources\\Fonts\\Inter.ttf");
-	body->getLocalBounds().height - face->getLocalBounds().height / 2;
+	//function.setsize(15);
+	//sf::FloatRect coords = function.data().getLocalBounds();
+	//function.data().setOrigin(coords.width / 2, coords.height / 2);
+	//function.setpos(posx, posy + (body->getLocalBounds().height/2)+10);
 }
 
 button::~button() {
@@ -121,18 +139,19 @@ button::~button() {
 
 void button :: operator > (sf::RenderWindow* plane) {
 	plane->draw(*body);
-	plane->draw(function.data());
+	//plane->draw(function.data());
 	plane->draw(*face);
+	//plane->draw(function.data());
 }
 
 bool button::intersect(sf::RenderWindow* plane, sf::Event* event) {
 	//if(sf::Mouse::getPosition(*plane).x>(body->getLocalBounds().width+body->))
 	if ((sf::Mouse::getPosition(*plane).x > (body->getPosition().x - body->getOrigin().x)) && (sf::Mouse::getPosition(*plane).x < (body->getPosition().x + body->getOrigin().x)) && (sf::Mouse::getPosition(*plane).y > (body->getPosition().y - body->getOrigin().y)) && (sf::Mouse::getPosition(*plane).y < (body->getPosition().y + body->getOrigin().y))) {
 		body->setFillColor(sf::Color(255, 0, 0));
-		if (sf::Event::MouseButtonPressed && event->key.code == sf::Mouse::Left || (click > 0) && (click < 33.33)) {
+		if (sf::Event::MouseButtonPressed && event->key.code == sf::Mouse::Left || (click > 0) && (click < 10)) {
 			click++;
-			body->setFillColor(sf::Color(255 * click * 3 / 100, 0, 0));
-			if (click == 33) {
+			body->setFillColor(sf::Color(255 * click * 10 / 100, 0, 0));
+			if (click == 10) {
 				return 1;
 			}
 			else
@@ -147,7 +166,7 @@ bool button::intersect(sf::RenderWindow* plane, sf::Event* event) {
 		return 0;
 }
 
-void  button::write (sf::RenderWindow* plane, sf::Event* event,char*text) {
+bool  button::write (sf::RenderWindow* plane, sf::Event* event,char*text) {
 	if ((sf::Mouse::getPosition(*plane).x > (body->getPosition().x - body->getOrigin().x)) && (sf::Mouse::getPosition(*plane).x < (body->getPosition().x + body->getOrigin().x)) && (sf::Mouse::getPosition(*plane).y > (body->getPosition().y - body->getOrigin().y)) && (sf::Mouse::getPosition(*plane).y < (body->getPosition().y + body->getOrigin().y))) {
 		body->setFillColor(sf::Color(255, 0, 0));
 		if ((sf::Event::MouseButtonPressed && event->key.code == sf::Mouse::Left) || click == 1) {
@@ -170,6 +189,7 @@ void  button::write (sf::RenderWindow* plane, sf::Event* event,char*text) {
 				character = 0;
 				caps = 0;
 				click = 0;
+				return 1;
 			    break;
 			case sf::Keyboard::Tab:
 				//capital
@@ -209,7 +229,11 @@ void  button::write (sf::RenderWindow* plane, sf::Event* event,char*text) {
 				character++;
 				break;
 			case sf::Keyboard::I:
-				text[character] = (caps) ? 'I' : 'j';
+				text[character] = (caps) ? 'I' : 'i';
+				character++;
+				break;
+			case sf::Keyboard::J:
+				text[character] = (caps) ? 'J' : 'j';
 				character++;
 				break;
 			case sf::Keyboard::K:
@@ -282,10 +306,11 @@ void  button::write (sf::RenderWindow* plane, sf::Event* event,char*text) {
 
 	}
 	if (click == 0) {
-		for (int i = 0; i < 15; i++) {
+		for (int i = 0; i < 50; i++) {
 		text[i] = '\0';
 	}
 	}
+	return 0;
 }
 
 

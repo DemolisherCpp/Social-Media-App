@@ -1,11 +1,26 @@
-2
+3
 
 U1
-Muhammad Rahim
-1
-
-U2
-Muhammad Obaid
+Rahim
+2
 0
 
 U2
+Obaid
+0
+1
+
+U3
+No Name
+0
+1
+
+U2
+U3
+
+P1
+lol got admission
+4
+university.jpg
+1
+
