@@ -187,7 +187,7 @@ bool  button::write (sf::RenderWindow* plane, sf::Event* event,char*text) {
 			//exit
 			break;
 		    case sf::Keyboard::Enter:
-				text[character-1] = '\0';
+				text[character] = '\0';
 				character = 0;
 				caps = 0;
 				click = 0;
@@ -235,8 +235,8 @@ bool  button::write (sf::RenderWindow* plane, sf::Event* event,char*text) {
 				character++;
 				break;
 			case sf::Keyboard::J:
-				text[character] = (caps) ? 'J' : 'j';
-				character++;
+				//text[character] = (caps) ? 'J' : 'j';
+				//character++;
 				break;
 			case sf::Keyboard::K:
 				text[character] = (caps) ? 'K' : 'k';
@@ -251,8 +251,8 @@ bool  button::write (sf::RenderWindow* plane, sf::Event* event,char*text) {
 				character++;
 				break;
 			case sf::Keyboard::N:
-				text[character] = (caps) ? 'N' : 'n';
-				character++;
+				//text[character] = (caps) ? 'N' : 'n';
+				//character++;
 				break;
 			case sf::Keyboard::O:
 				text[character] = (caps) ? 'O' : 'o';
@@ -302,6 +302,47 @@ bool  button::write (sf::RenderWindow* plane, sf::Event* event,char*text) {
 				text[character] = (caps) ? 'Z' : 'z';
 				character++;
 				break;
+			case sf::Keyboard::Num0:
+				text[character] = '0';
+				character++;
+				break;
+			case sf::Keyboard::Num1:
+				text[character] = '1';
+				character++;
+				break;
+			case sf::Keyboard::Num2:
+				text[character] = '2';
+				character++;
+				break;
+			case sf::Keyboard::Num3:
+				text[character] = '3';
+				character++;
+				break;
+			case sf::Keyboard::Num4:
+				text[character] = '4';
+				character++;
+				break;
+			case sf::Keyboard::Num5:
+				text[character] = '5';
+				character++;
+				break;
+			case sf::Keyboard::Num6:
+				//text[character] = '6';
+				//character++;
+				break;
+			case sf::Keyboard::Num7:
+				text[character] = '7';
+				character++;
+				break;
+			case sf::Keyboard::Num8:
+				text[character] = '8';
+				character++;
+				break;
+			case sf::Keyboard::Num9:
+				text[character] = '9';
+				character++;
+				break;
+
 
 
 			}

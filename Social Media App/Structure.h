@@ -150,6 +150,7 @@ public:
 	std::string getfriendname(int);
 	void addpost(std::string, std::string, int, std::string,int);
 	void setnooffriends(int);
+	void setnoofposts(int);
 	int getnooffriends();
 	int getnoofposts();
 	void setname(std::string);
@@ -179,6 +180,10 @@ user::user(std::string idtext = "000",std:: string text="No Name",int fr=0,int p
 
 void user:: setnoofusers(int a) {
 	noofusers = a;
+}
+
+void user :: setnoofposts(int a) {
+	noofposts = a;
 }
 
 void user::setname(std::string a) {

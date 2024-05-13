@@ -11,11 +11,14 @@ int main() {
 	std::vector<texter*> selectusertext;
 	std::vector<button*> feedinterface;
 	std::vector<texter*> feedtext;
-	std::vector<std::vector<texter*>*> feedtextperuser;
+	//std::vector<std::vector<texter*>*> feedtextperuser;
 	//button* selectuseradd=nullptr;
+	std::vector<button*> homeinterface;
+	std::vector<texter*> hometext;
+
 
 	//test area
-	std::string a; std::string b; std :: string c;
+	std::string a; std::string b; std::string c; std::string d; std::string e; std::string f;
 	char* pero = new char[50];
 	for (int i = 0; i < 50; i++) {
 		pero[i] = '\0';
@@ -28,7 +31,7 @@ int main() {
 	start.loaddata(people);
 	sf::RenderWindow* Application=new sf::RenderWindow(sf::VideoMode(0.5625 * sf::VideoMode::getDesktopMode().height, sf::VideoMode::getDesktopMode().height), "Omernator", sf::Style::Titlebar | sf::Style::Close);
 	Application->setFramerateLimit(240);
-	start.loadstats(people,Application,mainmenuinterface, mainmenutext, selectinterface, selectusertext, feedinterface, feedtext);
+	start.loadstats(people,Application,mainmenuinterface, mainmenutext, selectinterface, selectusertext, feedinterface, feedtext, homeinterface, hometext);
 	//std::cout << Application->getSize().x;
 	//std::cout<<Application->getSize().y;
 
@@ -45,22 +48,31 @@ int main() {
 		//Application->clear();
 		switch (start.phase) {
 		case 0:
-			start.mainmenu(Application, Platform, mainmenuinterface, mainmenutext);
+			start.mainmenu(Application, Platform, mainmenuinterface, mainmenutext,pero);
 			break;
 		case 1:
-			start.selectuser(Application, Platform,people, selectinterface, selectusertext);
-			break;
-		case 4:
-			start.newuser(Application, Platform, pero,people,a,b);
+			start.selectuser(Application, Platform,people, selectinterface, selectusertext,pero);
 			break;
 		case 2:
 			start.friendspage(Application, Platform);
 			break;
 		case 3:
-			start.feed(Application, Platform,feedinterface,feedtext);
+			start.feed(Application, Platform,feedinterface,feedtext,pero);
+			break;
+		case 4:
+			start.home(Application, Platform,homeinterface,hometext,pero);
+			break;
+		case 5:
+			start.searchfriend(Application, Platform,people, pero,f);
+			break;
+		case 9:
+			start.newuser(Application, Platform, pero, people, a, b);
 			break;
 		case 10:
 			start.newcomment(Application, Platform, pero, c);
+			break;
+		case 11:
+			start.postadder(Application, Platform, pero, d,e);
 			break;
 		}
 
