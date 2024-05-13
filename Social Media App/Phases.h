@@ -18,16 +18,76 @@ public:
 	void setcurrentuser(user*);
 	void loaddata(std::vector<user*> & data);
 	void releasedata(std::vector<user*>);
-	void mainmenu(sf::RenderWindow* , sf::Event* );
-	void selectuser(sf::RenderWindow*, sf::Event*, std::vector<user*> &);
+	void mainmenu(sf::RenderWindow* , sf::Event* , std::vector<button*>& menudata, std::vector<texter*> & menutext);
+	void selectuser(sf::RenderWindow*, sf::Event*, std::vector<user*> &, std::vector<button*> , std::vector<texter*>);
 	void newuser(sf::RenderWindow*, sf::Event*, char*, std::vector<user*> & ,std::string &,std::string &);
 	void friendspage(sf::RenderWindow*, sf::Event*);
-	void feed(sf::RenderWindow*, sf::Event*);
+	void feed(sf::RenderWindow*, sf::Event*, std::vector<button*> , std::vector<texter*>);
+	void loadstats(std::vector<user*>, sf::RenderWindow*, std::vector<button*>& menudata, std::vector<texter*>& menutext, std::vector<button*>& selectuserdata, std::vector<texter*>& selectusertext, std::vector<button*>&, std::vector<texter*>&);
+	void newcomment(sf::RenderWindow*, sf::Event*, char* , std::string & );
 
 
 
 
 };
+
+void gui::loadstats(std::vector<user*> data, sf::RenderWindow* plane, std::vector<button*>& menudata, std::vector<texter*>& menutext, std::vector<button*>& selectuserdata, std::vector<texter*>& selectusertext , std::vector<button*>& feeddata, std::vector<texter*>& feedtext){
+
+	std::cout << "Initializing and loading Graphics" << std::endl << std::endl;
+
+	//main mennu
+	menudata.push_back(new button("user.png", plane->getSize().y / 14.4, plane->getSize().y / 14.4, plane->getSize().x - ((plane->getSize().y / 14.4) / 2), 0 + ((plane->getSize().y / 14.4) / 2)));
+	menudata.push_back(new button("friends.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x / 12.14, plane->getSize().y / 3.6, 0.03, 0.03));
+	menudata.push_back(new button("Post.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x / 12.14, plane->getSize().y / 2.7, 0.15, 0.15));
+	menutext.push_back(new texter("Inter.ttf", "Signed Out", (plane->getSize().y / 14.4) / 5, 0, 0, 0, 255, plane->getSize().x - ((plane->getSize().y / 14.4) / 2), (0 + ((plane->getSize().y / 14.4) / 2)) + ((plane->getSize().y / 14.4) / 2)));
+	menutext.push_back(new texter("Inter.ttf", "Signed In", (plane->getSize().y / 14.4) / 5, 0, 0, 0, 255, plane->getSize().x - ((plane->getSize().y / 14.4) / 2), (0 + ((plane->getSize().y / 14.4) / 2)) + ((plane->getSize().y / 14.4) / 2)));
+	//selectuser
+
+
+	selectusertext.push_back(new texter("Jerse.ttf", "Select User", plane->getSize().x / 10.116666666, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 20));
+	//plane->draw(heading.data());
+	int k = 0;
+	int l = 0;
+	for (int i = 0; i < data[0]->getnoofusers(); i++) {
+		selectuserdata.push_back(new button("user.png", plane->getSize().x / 4.669230769230, plane->getSize().x / 4.669230769230, (l * 2) * (plane->getSize().x / 6.07) + (plane->getSize().x / 6.07), 100 + ((k * 2) * (plane->getSize().y / 13.5) + (plane->getSize().y / 13.5)), 0.4, 0.4));
+		selectusertext.push_back(new texter("Inter.ttf", data[i]->getid(), (plane->getSize().x / 4.669230769230) / 4.333333333, 0, 0, 0, 255, (l * 2) * (plane->getSize().x / 6.07) + (plane->getSize().x / 6.07), ((plane->getSize().x / 4.669230769230) / 2) + 100 + ((k * 2) * (plane->getSize().y / 13.5) + (plane->getSize().y / 13.5))));
+		l++;
+		if (l == 3) {
+			l = 0;
+			k++;
+		}
+	}
+	selectuserdata.push_back(new button("add.png", plane->getSize().x / 5.0583333333, plane->getSize().x / 5.0583333333, plane->getSize().x / 2, plane->getSize().y * 17 / 20, 0.08, 0.08));
+
+	//posts
+	feedtext.push_back(new texter("Jerse.ttf", "Posts", plane->getSize().x / 10.116666666, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 25));
+	feedtext.push_back(new texter("Inter.ttf", "Comments : ", plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 6, plane->getSize().y / 2));
+	feedtext.push_back(new texter("Inter.ttf", "Likers : ", plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x *0.9, plane->getSize().y / 2));
+	feeddata.push_back(new button("like.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x / 12.14, plane->getSize().y / 3.6, 1.8, 1.8));
+	feeddata.push_back(new button("comment.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x / 12.14, plane->getSize().y / 2.7, 1.8, 1.8));
+
+
+
+	/*if (currentuser != nullptr) {
+		for (int i = 0; i < currentuser->getnooffriends(); i++) {
+			for (int j = 0; j < (currentuser->getfriends()[i])->getnoofposts(); j++) {
+				std::vector<texter*>* v1=new std::vector<texter*>;
+				v1->push_back(new texter("Inter.ttf", (currentuser->getfriends()[i])->getname(), plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 10));
+				v1->push_back(new texter("Inter.ttf", (currentuser->getfriends()[i])->getposttext(j), plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 7));
+				for (int k = 0; k < (currentuser->getfriends()[oned])->getpost(twod)->getnoofcomments(); k++) {
+					v1->push_back( new texter ("Inter.ttf", (currentuser->getfriends()[i])->getpost(j)->getcomment(k)->getusername(), plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 2, i * 50 + 50 + plane->getSize().y / 2));
+					v1->push_back(new texter("Inter.ttf", (currentuser->getfriends()[i])->getpost(j)->getcomment(k)->gettext(), plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 2, i * 50 + 75 + plane->getSize().y / 2));
+				}
+				feedtextperuser.push_back(v1);
+
+			}
+		}
+	}
+	*/
+
+
+	std::cout << "Graphics completely loaded" << std::endl << std::endl;
+}
 
 int gui::phase = 0;
 bool gui::tbphase = 0;
@@ -40,6 +100,9 @@ void gui :: setcurrentuser(user* a) {
 }
 
 void gui::loaddata(std::vector<user*>& data) {
+
+	std::cout << "Initializing and loading User Data" << std::endl << std::endl;
+
 	std::ifstream file;
 	file.open("users.txt");
 	user dummy;
@@ -75,6 +138,7 @@ void gui::loaddata(std::vector<user*>& data) {
 	std::string p;
 	std::string o;
 	int z;
+	int y;
 	std::string pth;
 	for (int i = 0; i < a; i++) {
 		for (int j = 0; j < data[i]->getnoofposts(); j++) {
@@ -83,18 +147,34 @@ void gui::loaddata(std::vector<user*>& data) {
 			std::getline(file, o);
 			file >> z;
 			file >> pth;
-			file >> a;
-			data[i]->addpost(p, o, z, pth,a);
-			for (int k = 0; k < a; k++) {
+			file >> y;
+			data[i]->addpost(p, o, z, pth,y);
+			for (int k = 0; k < y; k++) {
 				file.ignore();
 				std::getline(file, p);
-				file.ignore();
+				//file.ignore();
 				std::getline(file, o);
-				data[i]->getposts()[j].addcomment(p,o);
+				data[i]->getpost(j)->addcomment(p, o);
 			}
+			int r;
+			file >> r;
+			data[i]->getpost(j)->setnooflikes(r);
+			for (int t = 0; t < data[i]->getpost(j)->getnooflikes(); t++) {
+				std::string w;
+				file >> w;
+				for (int q = 0; q < data[0]->getnoofusers(); q++) {
+					if (w == data[q]->getid()) {
+						data[i]->getpost(j)->addliker(data[q]);
+					}
+				}
+			}
+
 		}
 	}
 	file.close();
+
+	std::cout << "User Data completely loaded" << std::endl << std::endl;
+	//std::cout<<data[1]->getpost(0)->getcomment(0)->gettext();
 }
 
 void gui::adduser(std::vector<user*> & data,std::string a,std::string b) {
@@ -104,42 +184,24 @@ void gui::adduser(std::vector<user*> & data,std::string a,std::string b) {
 }
 
 
-void gui:: mainmenu(sf::RenderWindow* plane, sf::Event* event) {
+void gui:: mainmenu(sf::RenderWindow* plane, sf::Event* event, std::vector<button*>& menudata, std::vector<texter*>& menutext) {
 	//drawings
 	plane->clear(sf::Color::White);
-	button userbutton("user.png", plane->getSize().y / 14.4, plane->getSize().y / 14.4, plane->getSize().x - ((plane->getSize().y / 14.4) / 2), 0 + ((plane->getSize().y / 14.4) / 2));
-	if (userbutton.intersect(plane, event)) {
-		std::cout << "Phase switched";
-		phase = 1;
+	//print stats
+	for (int i = 0; i < menudata.size(); i++) {
+		*(menudata[i]) > plane;
+		if (menudata[i]->intersect(plane, event)) {
+			phase = i + 1;
+		}
 	}
-	userbutton > plane;
 	if (currentuser == nullptr) {
-		texter userbuttontext("Inter.ttf", "Signed Out", (plane->getSize().y / 14.4)/5, 0, 0, 0, 255, plane->getSize().x - ((plane->getSize().y / 14.4) / 2), (0 + ((plane->getSize().y / 14.4) / 2))+ ((plane->getSize().y / 14.4)/2));
-		plane->draw(userbuttontext.data());
+		plane->draw(menutext[0]->data());
 	}
 	else if (currentuser != nullptr) {
-		texter userbuttontext("Inter.ttf", "Signed In", (plane->getSize().y / 14.4) / 5, 0, 0, 0, 255, plane->getSize().x - ((plane->getSize().y / 14.4) / 2), (0 + ((plane->getSize().y / 14.4) / 2)) + ((plane->getSize().y / 14.4) / 2));
-		plane->draw(userbuttontext.data());
+		plane->draw(menutext[1]->data());
 	}
-	button friends("friends.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x / 12.14, plane->getSize().y / 3.6,0.03,0.03);
-	if (friends.intersect(plane, event)) {
-		phase = 3;
-	}
-	friends > plane;
-	button posts("Post.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x / 12.14, plane->getSize().y / 2.7, 0.15, 0.15);
-	if (posts.intersect(plane, event)) {
-		phase = 4;
-	}
-	posts > plane;
-
-
 	//functions
-
-
-
-
 	//test
-
 }
 
 void gui::friendspage(sf::RenderWindow* plane, sf::Event* event) {
@@ -161,52 +223,154 @@ void gui::friendspage(sf::RenderWindow* plane, sf::Event* event) {
 
 }
 
-void gui :: feed (sf::RenderWindow* plane, sf::Event* event) {
+void gui::feed(sf::RenderWindow* plane, sf::Event* event, std::vector<button*>feeddata, std::vector<texter*> feedtext) {
 	plane->clear(sf::Color::White);
-	texter heading("Jerse.ttf", "Posts", plane->getSize().x / 10.116666666, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 25);
-	plane->draw(heading.data());
-    if (currentuser != nullptr) {
-	    if (event->text.unicode == sf::Keyboard::Tab) {
-		       twod++;
-	       }
-	    if (twod == (currentuser->getfriends()[oned])->getnoofposts()) {
-		 oned++;
-		 twod = 0;
-	       }
-		if (oned == currentuser->getnooffriends()) {
+	if (currentuser->getnooffriends() > 0) {
+		bool check = 0;
+		for (int i = 0; i < currentuser->getnooffriends(); i++) {
+			if ((currentuser->getfriends()[i])->getnoofposts() > 0) {
+				check = 1;
+				break;
+			}
+			if (i + 1 == currentuser->getnooffriends() || currentuser->getnooffriends() == 0) {
+				check = 0;
+				//phase = 0;
+				break;
+				//phase = 0;
+			}
+		}
+
+		if ((currentuser->getfriends()[oned])->getnoofposts() > 0) {
+			check = 1;
+		}
+		if ((currentuser->getfriends()[oned])->getnoofposts() == 0) {
+			check = 0;
+			//phase = 0;
+		}
+		if (currentuser != nullptr) {
+			if (event->text.unicode == sf::Keyboard::Tab) {
+				twod++;
+				check = 0;
+			}
+			if ((twod == (currentuser->getfriends()[oned])->getnoofposts()) || (currentuser->getfriends()[oned])->getnoofposts() == 0) {
+				oned++;
+				twod = 0;
+				check = 0;
+			}
+			if (oned == currentuser->getnooffriends()) {
+				oned = 0;
+				twod = 0;
+				check = 0;
+			}
+			if (check == 1) {
+
+
+				for (int i = 0; i < feedtext.size(); i++) {
+					plane->draw(feedtext[i]->data());
+				}
+				for (int i = 0; i < feeddata.size(); i++) {
+					*feeddata[i] > plane;
+					//like button
+					if (feeddata[0]->intersect(plane, event)) {
+						std::cout << "click" << std::endl;
+						bool liked = 0;
+						for (int i = 0; i < (currentuser->getfriends()[oned])->getpost(twod)->getlikers().size(); i++) {
+							liked = 1;
+							if (currentuser->getid() == (currentuser->getfriends()[oned])->getpost(twod)->getlikers()[i]->getid()) {
+								(currentuser->getfriends()[oned])->getpost(twod)->removeliker(i);
+								
+								std::cout << "liker removed" << std::endl;
+								break;
+							}
+						    if (i + 1 == (currentuser->getfriends()[oned])->getpost(twod)->getlikers().size()) {
+								std::cout << "liker added" << std::endl;
+								(currentuser->getfriends()[oned])->getpost(twod)->addliker(currentuser);
+								(currentuser->getfriends()[oned])->getpost(twod)->setnooflikes((currentuser->getfriends()[oned])->getpost(twod)->getlikers().size());
+								break;
+								
+
+							}
+						}
+						// dont this check function but seems important
+						if (liked==0) {
+							//liked = 0;
+							std::cout << "liker added" << std::endl;
+							(currentuser->getfriends()[oned])->getpost(twod)->addliker(currentuser);
+							(currentuser->getfriends()[oned])->getpost(twod)->setnooflikes((currentuser->getfriends()[oned])->getpost(twod)->getlikers().size());
+						}
+
+					}
+					if (feeddata[1]->intersect(plane, event)) {
+						for (int i = 0; i < (currentuser->getfriends()[oned])->getpost(twod)->getcomments().size(); i++) {
+							if (currentuser->getname() == (currentuser->getfriends()[oned])->getpost(twod)->getcomments()[i]->getusername()) {
+								std::cout << "Already commented" << std::endl;
+								break;
+							}
+							if (i + 1 == (currentuser->getfriends()[oned])->getpost(twod)->getcomments().size()) {
+								phase = 10;
+								break;
+							}
+						}
+
+					}
+
+
+					//post
+					texter ids("Inter.ttf", (currentuser->getfriends()[oned])->getname(), plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 10);
+					texter lel("Inter.ttf", (currentuser->getfriends()[oned])->getposttext(twod), plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 7);
+					plane->draw(ids.data());
+					plane->draw(lel.data());
+					//comments
+					for (int i = 0; i < (currentuser->getfriends()[oned])->getpost(twod)->getnoofcomments(); i++) {
+
+						
+						std::string f = (currentuser->getfriends()[oned])->getpost(twod)->getcomment(i)->getusername();
+						std::string h = " : ";
+						std::string l = (currentuser->getfriends()[oned])->getpost(twod)->getcomment(i)->gettext();
+						f+= h;
+						f += l;
+						texter cmt("Inter.ttf",f, plane->getSize().x / 40, 0, 0, 0, 255, plane->getSize().x / 3, i * 25 + 50 + plane->getSize().y / 2);
+						plane->draw(cmt.data());
+						//pictures
+						sf::Texture texture;
+						std::string a = "Resources\\Images\\";
+						std::string b = (currentuser->getfriends()[oned])->getpostpicpath(twod);
+						a += b;
+						texture.loadFromFile(a);
+						sf::Sprite sprite;
+						sprite.setTexture(texture);
+						sf::FloatRect coords = sprite.getLocalBounds();
+						sprite.setOrigin(coords.width / 2, coords.height / 2);
+						sprite.setOrigin(150, 150);
+						sprite.setPosition(plane->getSize().x / 2, plane->getSize().y / 3);
+						plane->draw(sprite);
+					}
+
+					//likes
+					for (int i = 0; i < (currentuser->getfriends()[oned])->getpost(twod)->getnooflikes(); i++) {
+						texter like("Inter.ttf", (currentuser->getfriends()[oned])->getpost(twod)->getlikers()[i]->getname(), plane->getSize().x / 40, 0, 0, 0, 255, plane->getSize().x *0.85, i * 25 + 50 + plane->getSize().y / 2);
+						plane->draw(like.data());
+						//(currentuser->getfriends()[oned])->getpost(twod)->getlikers()[i]->getname();
+					}
+				}
+
+			}
+		}
+
+
+
+
+		//if you are looking to return that is
+		if (event->text.unicode == sf::Keyboard::Escape) {
+			phase = 0;
 			oned = 0;
 			twod = 0;
 		}
-		texter ids("Inter.ttf", (currentuser->getfriends()[oned])->getname(), plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 2,plane->getSize().y / 10);
-				texter lel("Inter.ttf", (currentuser->getfriends()[oned])->getposttext(twod), plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 2,plane->getSize().y / 7);
-				texter chead("Inter.ttf","Comments : ", plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 2);
-				sf::Texture texture;
-				std::string a = "Resources\\Images\\";
-				std::string b = (currentuser->getfriends()[oned])->getpostpicpath(twod);
-				a += b;
-				texture.loadFromFile(a);
-				sf::Sprite sprite;
-				sprite.setTexture(texture);
-				sf::FloatRect coords = sprite.getLocalBounds();
-				sprite.setOrigin(coords.width / 2, coords.height / 2);
-				sprite.setOrigin(150, 150);
-				sprite.setPosition(plane->getSize().x / 2, plane->getSize().y / 3);
-				plane->draw(sprite);
-				plane->draw(ids.data());
-				plane->draw(lel.data());
-				plane->draw(chead.data());
-	}
-
-
-
-
-	//if you are looking to return that is
-	if (event->text.unicode == sf::Keyboard::Escape) {
-		phase = 0;
 	}
 }
 
 void gui::releasedata(std::vector<user*> data) {
+	std::cout << "Saving User Data" << std::endl << std::endl;
 	std::ofstream file;
 	file.open("users.txt",std::ofstream::trunc);
 	file<<data[0]->getnoofusers();
@@ -229,47 +393,40 @@ void gui::releasedata(std::vector<user*> data) {
 			file << data[i]->getposttext(j) << std::endl;
 			file << data[i]->getpostdate(j) << std::endl;
 			file << data[i]->getpostpicpath(j) << std::endl;
-			file << data[i]->getposts()[j].getnoofcomments() << std::endl;
-			for (int k = 0; k < data[i]->getposts()[j].getcomments().size(); k++) {
-				file << data[i]->getposts()[j].getcomments()[k].getusername() << std::endl;
-				file << data[i]->getposts()[j].getcomments()[k].gettext() << std::endl;
+			file << data[i]->getposts()[j]->getnoofcomments() << std::endl;
+			for (int k = 0; k < data[i]->getposts()[j]->getcomments().size(); k++) {
+				file << data[i]->getpost(j)->getcomment(k)->getusername() << std::endl;
+				file << data[i]->getpost(j)->getcomment(k)->gettext() << std::endl;
+			}
+			file << data[i]->getpost(j)->getnooflikes() << std::endl;
+			for (int q = 0; q < data[i]->getpost(j)->getlikers().size(); q++) {
+				file << data[i]->getpost(j)->getlikers()[q]->getid() << std::endl;
 			}
 			file << std::endl;
 
 		}
 	}
 	file.close();
+
+	std::cout << "User Data completely saved" << std::endl << std::endl;
 }
 
-void gui::selectuser(sf::RenderWindow* plane, sf::Event* event, std::vector<user*> & data) {
+void gui::selectuser(sf::RenderWindow* plane, sf::Event* event, std::vector<user*> & data  , std::vector<button*> selectuserdata, std::vector<texter*> selectusertext) {
 	plane->clear(sf::Color::White);
-	texter heading("Jerse.ttf", "Select User", plane->getSize().x / 10.116666666, 0, 0, 0, 255, plane->getSize().x/2, plane->getSize().y/20);
-	plane->draw(heading.data());
-	int k = 0;
-	int l = 0;
-	for (int i = 0; i < data[0]->getnoofusers(); i++) {
-		button users("user.png", plane->getSize().x / 4.669230769230, plane->getSize().x / 4.669230769230, (l*2)*(plane->getSize().x/6.07)+(plane->getSize().x / 6.07), 100+((k * 2) * (plane->getSize().y / 13.5) + (plane->getSize().y / 13.5)),0.4,0.4);
-		texter id("Inter.ttf", data[i]->getid(), (plane->getSize().x / 4.669230769230)/4.333333333, 0, 0, 0, 255, (l * 2) * (plane->getSize().x / 6.07) + (plane->getSize().x / 6.07), ((plane->getSize().x / 4.669230769230)/2)+ 100 + ((k * 2) * (plane->getSize().y / 13.5) + (plane->getSize().y / 13.5)));
-		if (users.intersect(plane, event)) {
-			std::cout << "Phase switched";
+	for (int i = 0; i < selectuserdata.size()-1; i++) {
+		*selectuserdata[i] > plane;
+		if (selectuserdata[i]->intersect(plane, event)) {
 			currentuser = data[i];
 			phase = 0;
 		}
-		users > plane;
-		plane->draw(id.data());
-		l++;
-		if (l == 3) {
-			l = 0;
-			k++;
-		}
-
 	}
-	button add("add.png", plane->getSize().x / 5.0583333333, plane->getSize().x / 5.0583333333,plane->getSize().x/2,plane->getSize().y*17/20,0.08,0.08);
-		if (add.intersect(plane, event)) {
-			std::cout << "Phase switched";
-			phase = 2;
+	for (int i = 0; i < selectusertext.size(); i++) {
+		plane->draw(selectusertext[i]->data());
+	}
+	*(selectuserdata[selectuserdata.size() - 1]) > plane;
+		if (selectuserdata[selectuserdata.size() - 1]->intersect(plane, event)) {
+			phase = 4;
 		}
-		add > plane;
 
 }
 
@@ -320,6 +477,30 @@ void gui::newuser(sf::RenderWindow* plane, sf::Event* event, char* text, std::ve
 		texter writer("Inter.ttf", lol, 50, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 2);
 		plane->draw(writer.data());
 	}
+}
+
+void gui::newcomment(sf::RenderWindow* plane, sf::Event* event, char* text,std::string& c) {
+	plane->clear(sf::Color::White);
+	texter enter("Inter.ttf", "Enter Comment", 75, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 5);
+	plane->draw(enter.data());
+	button textbox("textbox.png", 350, 100, plane->getSize().x / 2, plane->getSize().y / 2, 3.3, 2.5);
+	if (textbox.write(plane, event, text)) {
+		c = text;
+		(currentuser->getfriends()[oned])->getpost(twod)->addcomment(currentuser->getname(),c);
+		(currentuser->getfriends()[oned])->getpost(twod)->setnoofcomments((currentuser->getfriends()[oned])->getpost(twod)->getcomments().size());
+		//adduser(data, b, c);
+		phase = 3;
+	}
+	std::string a;
+	char lol[50] = {};
+	int i = 0;
+	for (i = 0; text[i] != '\0'; i++) {
+		lol[i] = text[i];
+	}
+	lol[i] = '\0';
+	textbox > plane;
+	texter writer("Inter.ttf", lol, plane->getSize().x/15, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 2);
+	plane->draw(writer.data());
 }
 
 

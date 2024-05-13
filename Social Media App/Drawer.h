@@ -162,8 +162,10 @@ bool button::intersect(sf::RenderWindow* plane, sf::Event* event) {
 			return 0;
 		}
 	}
-	else
+	else {
+		body->setFillColor(sf::Color(255, 255, 255));
 		return 0;
+	}
 }
 
 bool  button::write (sf::RenderWindow* plane, sf::Event* event,char*text) {

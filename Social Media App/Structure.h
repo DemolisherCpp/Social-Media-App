@@ -52,10 +52,11 @@ class post : public existence {
 	int date;
 	std::string picpath;
 	std::vector <user*> likers;
-	std::vector <comment> comments;
+	std::vector <comment*> comments;
 	int noofcomments;
+	int nooflikes;
 public:
-	post(std::string,std::string,int,std::string,int);
+	post(std::string,std::string,int,std::string,int,int);
 	std::string getdescription();
 	int getdate();
 	int getnoofcomments() {
@@ -67,15 +68,24 @@ public:
 	std::string getpicpath() {
 		return picpath;
 	}
-	std::vector <comment> getcomments();
+	std::vector <comment*> getcomments();
+	comment* getcomment(int i) {
+		return comments[i];
+	}
 	void addcomment(std::string,std::string);
+	void setnooflikes(int);
+	int getnooflikes();
+	void addliker(user*);
+	void removeliker(int);
+	void setnoofcomments(int);
 };
 
-post::post(std::string exid = "000", std::string text = "Nothing", int dat=0,std ::string path="Blank.jpg",int g=0) : existence(exid) {
+post::post(std::string exid = "000", std::string text = "Nothing", int dat=0,std ::string path="Blank.jpg",int g = 0,int s = 0) : existence(exid) {
 	description = text;
 	date = dat;
 	picpath = path;
 	noofcomments = g;
+	nooflikes = 0;
 }
 
 std::string post::getdescription() {
@@ -86,13 +96,37 @@ int post::getdate() {
 	return date;
 }
 
-std::vector <comment> post ::getcomments() {
+void post::setnooflikes(int a) {
+	nooflikes = a;
+}
+
+void post :: setnoofcomments(int a) {
+	noofcomments = a;
+}
+
+int post::getnooflikes() {
+	return nooflikes;
+}
+
+std::vector <comment*> post ::getcomments() {
 	return comments;
   }
 
+void post::addliker(user* a) {
+	likers.push_back(a);
+}
+
+void post::removeliker(int a) {
+	std::vector<user*>::iterator it;
+
+	it = likers.begin()+a;
+	likers.erase(it);
+	nooflikes = likers.size();
+}
+
 void post :: addcomment(std::string a, std::string b) {
 	//comment dummy(a, b);
-	comments.push_back(comment(a,b));
+	comments.push_back(new comment(a,b));
 
 
 }
@@ -104,7 +138,7 @@ class user :public existence {
 	int nooffriends;
 	static int noofusers;
 	int noofposts;
-	std::vector<post> posts;
+	std::vector<post*> posts;
 public:
 	user(std::string,std:: string,int,int);
 	void addfriend(user*);
@@ -120,14 +154,17 @@ public:
 	int getnoofposts();
 	void setname(std::string);
 	int getnoofpostcomments(int i) {
-		return posts[i].getnoofcomments();
+		return posts[i]->getnoofcomments();
 	}
 	std::string getpostid(int);
 	std::string getposttext(int);
 	int getpostdate(int);
 	std::string getpostpicpath(int);
-	std::vector<post> getposts() {
+	std::vector<post*> getposts() {
 		return posts;
+	}
+	post* getpost(int i) {
+		return posts[i];
 	}
 };
 
@@ -180,16 +217,16 @@ int user:: getnoofposts() {
 }
 
 std::string user::getpostid(int i) {
-	return posts[i].getid();
+	return posts[i]->getid();
 }
 std::string user::getposttext(int i) {
-	return posts[i].getdescription();
+	return posts[i]->getdescription();
 }
 int user::getpostdate(int i) {
-	return posts[i].getdate();
+	return posts[i]->getdate();
 }
 std::string user::getpostpicpath(int i) {
-	return posts[i].getpicpath();
+	return posts[i]->getpicpath();
 }
 
 void user::addfriend(user* add) {
@@ -197,7 +234,7 @@ void user::addfriend(user* add) {
 }
 
 void user::addpost(std::string a = "000", std::string b = "Nothing", int c = 0, std::string d = "Blank.jpg",int p=0) {
-	posts.push_back(post(a, b, c, d,p));
+	posts.push_back(new post(a, b, c, d,p));
 }
 
 
