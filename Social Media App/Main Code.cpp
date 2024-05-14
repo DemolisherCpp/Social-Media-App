@@ -77,6 +77,10 @@ int main() {
 		case 7:
 			start.pagefeed(Application, Platform ,pagefeedinterface, pagefeedtext, pero);
 			break;
+		case 8:
+			start.loadstats(people, Application, mainmenuinterface, mainmenutext, selectinterface, selectusertext, feedinterface, feedtext, homeinterface, hometext, pagefeedinterface, pagefeedtext);
+			start.phase = 0;
+			break;
 		case 9:
 			start.newuser(Application, Platform, pero, people, a, b);
 			break;

@@ -17,6 +17,7 @@ void gui::loadstats(std::vector<user*> data, sf::RenderWindow* plane, std::vecto
 	menudata.push_back(new button("addfriend.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x * 0.92, plane->getSize().y / 3.6, 0.75, 0.75));
 	menudata.push_back(new button("addpage.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x * 0.92, plane->getSize().y / 2.7, 0.75, 0.75));
 	menudata.push_back(new button("page.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x * 0.92, plane->getSize().y / 2.16, 0.75, 0.75));
+	menudata.push_back(new button("sync.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x /2, plane->getSize().y /20, 0.75, 0.75));
 	menutext.push_back(new texter("Inter.ttf", "Signed Out", (plane->getSize().y / 14.4) / 5, 0, 0, 0, 255, plane->getSize().x - ((plane->getSize().y / 14.4) / 2), (0 + ((plane->getSize().y / 14.4) / 2)) + ((plane->getSize().y / 14.4) / 2)));
 	menutext.push_back(new texter("Inter.ttf", "Signed In", (plane->getSize().y / 14.4) / 5, 0, 0, 0, 255, plane->getSize().x - ((plane->getSize().y / 14.4) / 2), (0 + ((plane->getSize().y / 14.4) / 2)) + ((plane->getSize().y / 14.4) / 2)));
 	//selectuser
