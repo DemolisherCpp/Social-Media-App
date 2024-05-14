@@ -521,4 +521,3 @@ C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(5
 C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(59,97): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(59,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\momer\source\repos\Social-Media-App\Social Media App\Main Code.cpp(38,74): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
-  Social Media App.vcxproj -> C:\Users\momer\source\repos\Social-Media-App\x64\Debug\Social Media App.exe

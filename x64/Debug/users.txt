@@ -1,0 +1,65 @@
+5
+
+U1
+Rahim
+2
+1
+1
+
+U2
+Obaid
+2
+1
+0
+
+U3
+Ali
+1
+0
+1
+
+U4
+Usman
+1
+0
+0
+
+U5
+Muhammad Tahir
+0
+0
+0
+
+U2
+U3
+U1
+U4
+U5
+U3
+
+P1
+lol got admission
+4
+university.jpg
+1
+Obaid
+Which one??
+2
+U2
+U3
+
+P2
+lol I passed
+4
+pass.jpg
+2
+Ali
+hahahhaha could have done better
+RRahim
+How??
+1
+U1
+
+Pa1
+Pa3
+
