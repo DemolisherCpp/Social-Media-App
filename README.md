@@ -12,16 +12,16 @@ Download the debug folder present in the x64 folder in the main repository.
 Run the exe file inside and enjoy
 
 ### Key Features:
-Select User
-Add User
-Add Post
-Like a Post
-Comment a Post
-Follow a Page
-View Pages
-View Profile
-Add Friend
-View a feed
+- Select User
+- Add User
+- Add Post
+- Like a Post
+- Comment a Post
+- Follow a Page
+- View Pages
+- View Profile
+- Add Friend
+- View a feed
 
 
 
