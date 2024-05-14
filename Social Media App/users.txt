@@ -1,10 +1,10 @@
-3
+5
 
 U1
 Rahim
 2
-0
-0
+1
+1
 
 U2
 Obaid
@@ -13,39 +13,53 @@ Obaid
 0
 
 U3
-lol yay
+Ali
+1
+0
+1
+
+U4
+Usman
 1
 1
+0
+
+U5
+Muhammad Tahir
+0
 1
+0
 
 U2
 U3
 U1
+U4
+U5
 U3
-U2
 
 P1
 lol got admission
 4
 university.jpg
 1
-Rahim
-ola komutake
+Obaid
+Which one??
 2
+U2
 U3
-U1
 
-P4
+P2
 lol I passed
 4
-university.jpg
+pass.jpg
 2
-Obaid
+Ali
 hahahhaha could have done better
 RRahim
-Wtf
+How??
 1
 U1
 
-P11
+Pa1
+Pa3
 
