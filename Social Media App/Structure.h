@@ -131,6 +131,104 @@ void post :: addcomment(std::string a, std::string b) {
 
 }
 
+//page lol(looks like a user shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh)
+
+
+
+
+
+
+
+
+class page :public existence {
+	std::string name;
+	static int noofpages;
+	int noofposts;
+	std::vector<post*> posts;
+public:
+	page(std::string, std::string, int);
+	void setnoofpages(int);
+	int getnoofpages();
+	std::string getname();
+	void addpost(std::string, std::string, int, std::string, int);
+	void setnoofposts(int);
+	int getnoofposts();
+	void setname(std::string);
+	int getnoofpostcomments(int i) {
+		return posts[i]->getnoofcomments();
+	}
+	std::string getpostid(int);
+	std::string getposttext(int);
+	int getpostdate(int);
+	std::string getpostpicpath(int);
+	std::vector<post*> getposts() {
+		return posts;
+	}
+	post* getpost(int i) {
+		return posts[i];
+	}
+};
+
+int page::noofpages = 0;
+
+
+page::page(std::string idtext = "000", std::string text = "No Name", int ps = 0) : existence(idtext) {
+	name = text;
+	noofposts = ps;
+}
+
+void page::setnoofpages(int a) {
+	noofpages = a;
+}
+
+void page::setnoofposts(int a) {
+	noofposts = a;
+}
+
+void page::setname(std::string a) {
+	name = a;
+}
+
+int page::getnoofpages() {
+	return noofpages;
+}
+
+std::string page::getname() {
+	return name;
+}
+
+
+int page::getnoofposts() {
+	return noofposts;
+}
+
+std::string page::getpostid(int i) {
+	return posts[i]->getid();
+}
+std::string page::getposttext(int i) {
+	return posts[i]->getdescription();
+}
+int page::getpostdate(int i) {
+	return posts[i]->getdate();
+}
+std::string page::getpostpicpath(int i) {
+	return posts[i]->getpicpath();
+}
+
+void page::addpost(std::string a = "000", std::string b = "Nothing", int c = 0, std::string d = "Blank.jpg", int p = 0) {
+	posts.push_back(new post(a, b, c, d, p));
+}
+
+
+
+
+
+
+
+
+
+
+//user lol
 
 class user :public existence {
 	std::string name;
@@ -139,11 +237,15 @@ class user :public existence {
 	static int noofusers;
 	int noofposts;
 	std::vector<post*> posts;
+	std::vector<page*> followedpages;
+	int nooffollowedpages=0;
 public:
 	user(std::string,std:: string,int,int);
 	void addfriend(user*);
 	void setnoofusers(int);
+	void setnooffollowedpages(int);
 	int getnoofusers();
+	int getnooffollowedpages();
 	std::string getname();
 	std::vector<user*> getfriends();
 	std::string getfriendid(int);
@@ -163,6 +265,10 @@ public:
 	std::string getpostpicpath(int);
 	std::vector<post*> getposts() {
 		return posts;
+	}
+	void addpage(page*);
+	std::vector<page*> getfollowedpages() {
+		return followedpages;
 	}
 	post* getpost(int i) {
 		return posts[i];
@@ -190,8 +296,16 @@ void user::setname(std::string a) {
 	name = a;
 }
 
+void user::setnooffollowedpages(int a) {
+	nooffollowedpages = a;
+}
+
 int user::getnoofusers() {
 	return noofusers;
+}
+
+int user :: getnooffollowedpages() {
+	return nooffollowedpages;
 }
 
 std::string user::getname() {
@@ -240,6 +354,10 @@ void user::addfriend(user* add) {
 
 void user::addpost(std::string a = "000", std::string b = "Nothing", int c = 0, std::string d = "Blank.jpg",int p=0) {
 	posts.push_back(new post(a, b, c, d,p));
+}
+
+void user :: addpage(page* a) {
+	followedpages.push_back(a);
 }
 
 

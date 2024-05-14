@@ -15,10 +15,12 @@ int main() {
 	//button* selectuseradd=nullptr;
 	std::vector<button*> homeinterface;
 	std::vector<texter*> hometext;
+	std::vector<button*> pagefeedinterface;
+	std::vector<texter*> pagefeedtext;
 
 
 	//test area
-	std::string a; std::string b; std::string c; std::string d; std::string e; std::string f;
+	std::string a; std::string b; std::string c; std::string d; std::string e; std::string f; std::string g; std::string h;
 	char* pero = new char[50];
 	for (int i = 0; i < 50; i++) {
 		pero[i] = '\0';
@@ -27,11 +29,12 @@ int main() {
 
 	gui start;
 	std::vector<user*> people;
+	std::vector<page*> elites;
 	//user** people=nullptr;
-	start.loaddata(people);
+	start.loaddata(people,elites);
 	sf::RenderWindow* Application=new sf::RenderWindow(sf::VideoMode(0.5625 * sf::VideoMode::getDesktopMode().height, sf::VideoMode::getDesktopMode().height), "Omernator", sf::Style::Titlebar | sf::Style::Close);
 	Application->setFramerateLimit(240);
-	start.loadstats(people,Application,mainmenuinterface, mainmenutext, selectinterface, selectusertext, feedinterface, feedtext, homeinterface, hometext);
+	start.loadstats(people,Application,mainmenuinterface, mainmenutext, selectinterface, selectusertext, feedinterface, feedtext, homeinterface, hometext, pagefeedinterface, pagefeedtext);
 	//std::cout << Application->getSize().x;
 	//std::cout<<Application->getSize().y;
 
@@ -65,6 +68,12 @@ int main() {
 		case 5:
 			start.searchfriend(Application, Platform,people, pero,f);
 			break;
+		case 6:
+			start.pageadder(Application, Platform, elites, pero, f);
+			break;
+		case 7:
+			start.pagefeed(Application, Platform ,pagefeedinterface, pagefeedtext, pero);
+			break;
 		case 9:
 			start.newuser(Application, Platform, pero, people, a, b);
 			break;
@@ -74,12 +83,15 @@ int main() {
 		case 11:
 			start.postadder(Application, Platform, pero, d,e);
 			break;
+		case 12:
+			start.pagecomment(Application, Platform, pero,h);
+			break;
 		}
 
 		Application->display();
 
 	}
-	start.releasedata(people);
+	start.releasedata(people,elites);
 
 }
 

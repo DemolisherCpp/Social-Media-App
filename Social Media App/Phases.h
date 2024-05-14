@@ -16,25 +16,28 @@ public:
 	static user* currentuser;
 	void adduser(std::vector<user*> & ,std::string,std::string);
 	void setcurrentuser(user*);
-	void loaddata(std::vector<user*> & data);
-	void releasedata(std::vector<user*>);
+	void loaddata(std::vector<user*> & data , std::vector<page*>& server);
+	void releasedata(std::vector<user*> , std::vector<page*>& server);
 	void mainmenu(sf::RenderWindow* , sf::Event* , std::vector<button*>& menudata, std::vector<texter*> & menutext,char*);
 	void selectuser(sf::RenderWindow*, sf::Event*, std::vector<user*> &, std::vector<button*> , std::vector<texter*>,char *);
 	void newuser(sf::RenderWindow*, sf::Event*, char*, std::vector<user*> & ,std::string &,std::string &);
 	void friendspage(sf::RenderWindow*, sf::Event*);
 	void feed(sf::RenderWindow*, sf::Event*, std::vector<button*> , std::vector<texter*>, char*);
-	void loadstats(std::vector<user*>, sf::RenderWindow*, std::vector<button*>& menudata, std::vector<texter*>& menutext, std::vector<button*>& selectuserdata, std::vector<texter*>& selectusertext, std::vector<button*>&, std::vector<texter*>&, std::vector<button*> &, std::vector<texter*> &);
+	void pagefeed(sf::RenderWindow*, sf::Event*, std::vector<button*>, std::vector<texter*>, char*);
+	void loadstats(std::vector<user*>, sf::RenderWindow*, std::vector<button*>& menudata, std::vector<texter*>& menutext, std::vector<button*>& selectuserdata, std::vector<texter*>& selectusertext, std::vector<button*>&, std::vector<texter*>&, std::vector<button*> &, std::vector<texter*> & , std::vector<button*>&, std::vector<texter*>&);
 	void newcomment(sf::RenderWindow*, sf::Event*, char* , std::string & );
 	void searchfriend(sf::RenderWindow*, sf::Event*, std::vector<user*>& , char*, std::string&);
 	void home(sf::RenderWindow*, sf::Event*, std::vector<button*>, std::vector<texter*>, char*);
 	void postadder(sf::RenderWindow*, sf::Event*,char*text, std::string & , std::string &);
+	void pageadder(sf::RenderWindow*, sf::Event*, std::vector<page*>&, char*, std::string&);
+	void pagecomment(sf::RenderWindow*, sf::Event*, char*, std::string&);
 
 
 
 
 };
 
-void gui::loadstats(std::vector<user*> data, sf::RenderWindow* plane, std::vector<button*>& menudata, std::vector<texter*>& menutext, std::vector<button*>& selectuserdata, std::vector<texter*>& selectusertext , std::vector<button*>& feeddata, std::vector<texter*>& feedtext, std::vector<button*> & homedata, std::vector<texter*> & hometext){
+void gui::loadstats(std::vector<user*> data, sf::RenderWindow* plane, std::vector<button*>& menudata, std::vector<texter*>& menutext, std::vector<button*>& selectuserdata, std::vector<texter*>& selectusertext , std::vector<button*>& feeddata, std::vector<texter*>& feedtext, std::vector<button*> & homedata, std::vector<texter*> & hometext, std::vector<button*>& pagefeeddata, std::vector<texter*>& pagefeedtext){
 
 	std::cout << "Initializing and loading Graphics" << std::endl << std::endl;
 
@@ -44,6 +47,8 @@ void gui::loadstats(std::vector<user*> data, sf::RenderWindow* plane, std::vecto
 	menudata.push_back(new button("Post.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x / 12.14, plane->getSize().y / 2.7, 0.15, 0.15));
 	menudata.push_back(new button("home.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x / 12.14, plane->getSize().y / 2.16, 1.5,1.5));
 	menudata.push_back(new button("addfriend.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x *0.92, plane->getSize().y / 3.6, 0.75, 0.75));
+	menudata.push_back(new button("addpage.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x * 0.92, plane->getSize().y / 2.7, 0.75, 0.75));
+	menudata.push_back(new button("page.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x * 0.92, plane->getSize().y / 2.16, 0.75, 0.75));
 	menutext.push_back(new texter("Inter.ttf", "Signed Out", (plane->getSize().y / 14.4) / 5, 0, 0, 0, 255, plane->getSize().x - ((plane->getSize().y / 14.4) / 2), (0 + ((plane->getSize().y / 14.4) / 2)) + ((plane->getSize().y / 14.4) / 2)));
 	menutext.push_back(new texter("Inter.ttf", "Signed In", (plane->getSize().y / 14.4) / 5, 0, 0, 0, 255, plane->getSize().x - ((plane->getSize().y / 14.4) / 2), (0 + ((plane->getSize().y / 14.4) / 2)) + ((plane->getSize().y / 14.4) / 2)));
 	//selectuser
@@ -76,6 +81,13 @@ void gui::loadstats(std::vector<user*> data, sf::RenderWindow* plane, std::vecto
 	hometext.push_back(new texter("Inter.ttf", "Comments : ", plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 6, plane->getSize().y / 2));
 	hometext.push_back(new texter("Inter.ttf", "Likers : ", plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x * 0.9, plane->getSize().y / 2));
 	homedata.push_back(new button("add.png", plane->getSize().x / 5.0583333333, plane->getSize().x / 5.0583333333, plane->getSize().x / 2, plane->getSize().y * 17 / 20, 0.08, 0.08));
+
+	//pages
+	pagefeedtext.push_back(new texter("Jerse.ttf", "Pages", plane->getSize().x / 10.116666666, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 25));
+	pagefeedtext.push_back(new texter("Inter.ttf", "Comments : ", plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 6, plane->getSize().y / 2));
+	pagefeedtext.push_back(new texter("Inter.ttf", "Likers : ", plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x * 0.9, plane->getSize().y / 2));
+	pagefeeddata.push_back(new button("like.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x / 12.14, plane->getSize().y / 3.6, 1.8, 1.8));
+	pagefeeddata.push_back(new button("comment.png", plane->getSize().x / 6.07, plane->getSize().x / 6.07, plane->getSize().x / 12.14, plane->getSize().y / 2.7, 1.8, 1.8));
 
 
 
@@ -111,34 +123,130 @@ void gui :: setcurrentuser(user* a) {
 	currentuser = a;
 }
 
-void gui::loaddata(std::vector<user*>& data) {
+void gui::loaddata(std::vector<user*>& data, std::vector<page*>& server) {
 
-	std::cout << "Initializing and loading User Data" << std::endl << std::endl;
+		//users
+		std::cout << "Initializing and loading User Data" << std::endl << std::endl;
 
-	std::ifstream file;
-	file.open("users.txt");
+		std::ifstream sata;
+		sata.open("users.txt");
+		user dummy;
+		int a;
+		int b;
+		int e;
+		sata >> a;
+		dummy.setnoofusers(a);
+		//users
+		for (int i = 0; i < a; i++) {
+			std::string c;
+			std::string d;
+			sata >> c;
+			sata.ignore();
+			std::getline(sata, d);
+			sata >> b;
+			sata >> e;
+			data.push_back(new user(c, d, b, e));
+			int r;
+			sata >> r;
+			data[i]->setnooffollowedpages(r);
+		}
+
+	//pages
+
+	{
+		std::cout << "Initializing and loading Page Data" << std::endl << std::endl;
+
+		std::ifstream file;
+		file.open("pages.txt");
+		page dummy;
+		int a;
+		file >> a;
+		dummy.setnoofpages(a);
+		//pages
+		for (int i = 0; i < a; i++) {
+			std::string b;
+			std::string c;
+			int d;
+			file >> b;
+			file.ignore();
+			std::getline(file, c);
+			file >> d;
+			server.push_back(new page(b, c, d));
+		}
+		//posts
+		std::string e;
+		std::string f;
+		int v;
+		int w;
+		std::string pth;
+		for (int i = 0; i < a; i++) {
+			for (int j = 0; j < server[i]->getnoofposts(); j++) {
+				file >> e;
+				file.ignore();
+				std::getline(file, f);
+				file >> v;
+				file >> pth;
+				file >> w;
+				server[i]->addpost(e, f, v, pth, w);
+				for (int k = 0; k < w; k++) {
+					std::string l;
+					std::string m;
+					file.ignore();
+					std::getline(file, l);
+					//file.ignore();
+					std::getline(file, m);
+					server[i]->getpost(j)->addcomment(l, m);
+				}
+				int u;
+				file >> u;
+				server[i]->getpost(j)->setnooflikes(u);
+				for (int t = 0; t < server[i]->getpost(j)->getnooflikes(); t++) {
+					std::string w;
+					file >> w;
+					for (int q = 0; q < data[0]->getnoofusers(); q++) {
+						if (w == data[q]->getid()) {
+							server[i]->getpost(j)->addliker(data[q]);
+						}
+					}
+				}
+
+
+			}
+		}
+		file.close();
+		std::cout << "Page Data completely loaded" << std::endl << std::endl;
+	}
+	{
+	//users
+	/* {std::cout << "Initializing and loading User Data" << std::endl << std::endl;
+
+	std::ifstream sata;
+	sata.open("users.txt");
 	user dummy;
 	int a;
 	int b;
 	int e;
-	file >> a;
+	sata >> a;
 	dummy.setnoofusers(a);
 	//users
 	for (int i = 0; i < a; i++) {
 		std::string c;
 		std::string d;
-		file >> c;
-		file.ignore();
-		std::getline(file, d);
-		file >> b;
-		file >> e;
-		data.push_back(new user(c, d, b,e));
-	}
+		sata >> c;
+		sata.ignore();
+		std::getline(sata, d);
+		sata >> b;
+		sata >> e;
+		data.push_back(new user(c, d, b, e));
+		int r;
+		sata >> r;
+		data[i]->setnooffollowedpages(r);
+	} */
 	//friends
 	for (int i = 0; i < a; i++) {
 		for (int j = 0; j < data[i]->getnooffriends(); j++) {
 			std::string f;
-			file >> f;
+			sata >> f;
 			for (int k = 0; k < a; k++) {
 				if (f == (data[k]->getid())) {
 					data[i]->addfriend(data[k]);
@@ -154,26 +262,26 @@ void gui::loaddata(std::vector<user*>& data) {
 	std::string pth;
 	for (int i = 0; i < a; i++) {
 		for (int j = 0; j < data[i]->getnoofposts(); j++) {
-			file >> p;
-			file.ignore();
-			std::getline(file, o);
-			file >> z;
-			file >> pth;
-			file >> y;
-			data[i]->addpost(p, o, z, pth,y);
+			sata >> p;
+			sata.ignore();
+			std::getline(sata, o);
+			sata >> z;
+			sata >> pth;
+			sata >> y;
+			data[i]->addpost(p, o, z, pth, y);
 			for (int k = 0; k < y; k++) {
-				file.ignore();
-				std::getline(file, p);
-				//file.ignore();
-				std::getline(file, o);
+				sata.ignore();
+				std::getline(sata, p);
+				//sata.ignore();
+				std::getline(sata, o);
 				data[i]->getpost(j)->addcomment(p, o);
 			}
 			int r;
-			file >> r;
+			sata >> r;
 			data[i]->getpost(j)->setnooflikes(r);
 			for (int t = 0; t < data[i]->getpost(j)->getnooflikes(); t++) {
 				std::string w;
-				file >> w;
+				sata >> w;
 				for (int q = 0; q < data[0]->getnoofusers(); q++) {
 					if (w == data[q]->getid()) {
 						data[i]->getpost(j)->addliker(data[q]);
@@ -183,10 +291,25 @@ void gui::loaddata(std::vector<user*>& data) {
 
 		}
 	}
-	file.close();
+	//pages
+	for (int i = 0; i < a; i++) {
+		for (int j = 0; j < data[i]->getnooffollowedpages(); j++) {
+			std::string h;
+			sata >> h;
+			for (int k = 0; k < server.size(); k++) {
+				if (h == server[k]->getid()) {
+					data[i]->addpage(server[k]);
+				}
+			}
+		}
+	}
+	sata.close();
 
 	std::cout << "User Data completely loaded" << std::endl << std::endl;
 	//std::cout<<data[1]->getpost(0)->getcomment(0)->gettext();
+	}
+
+
 }
 
 void gui::adduser(std::vector<user*> & data,std::string a,std::string b) {
@@ -402,6 +525,162 @@ void gui::feed(sf::RenderWindow* plane, sf::Event* event, std::vector<button*>fe
 			twod = 0;
 		}
 	}
+	//test
+void  gui::pagefeed(sf::RenderWindow* plane, sf::Event* event, std::vector<button*> pagefeeddata, std::vector<texter*> pagefeedtext, char* text) {
+	plane->clear(sf::Color::White);
+	if (currentuser->getnooffollowedpages() > 0) {
+		bool check = 0;
+		for (int i = 0; i < currentuser->getnooffollowedpages(); i++) {
+			if ((currentuser->getfollowedpages()[i])->getnoofposts() > 0) {
+				check = 1;
+				break;
+			}
+			if (i + 1 == currentuser->getnooffollowedpages() || currentuser->getnooffollowedpages() == 0) {
+				check = 0;
+				//phase = 0;
+				break;
+				//phase = 0;
+			}
+		}
+
+		if ((currentuser->getfollowedpages()[oned])->getnoofposts() > 0) {
+			check = 1;
+		}
+		if ((currentuser->getfollowedpages()[oned])->getnoofposts() == 0) {
+			check = 0;
+			//phase = 0;
+		}
+		if (currentuser != nullptr) {
+			if (event->text.unicode == sf::Keyboard::Tab) {
+				twod++;
+				check = 0;
+			}
+			if ((twod == (currentuser->getfollowedpages()[oned])->getnoofposts()) || (currentuser->getfollowedpages()[oned])->getnoofposts() == 0) {
+				oned++;
+				twod = 0;
+				check = 0;
+			}
+			if (oned == currentuser->getfollowedpages().size()) {
+				oned = 0;
+				twod = 0;
+				check = 0;
+			}
+			if (check == 1) {
+
+
+				for (int i = 0; i < pagefeedtext.size(); i++) {
+					plane->draw(pagefeedtext[i]->data());
+				}
+				for (int i = 0; i < pagefeeddata.size(); i++) {
+					*pagefeeddata[i] > plane;
+					//like button
+					if (pagefeeddata[0]->intersect(plane, event)) {
+						std::cout << "click" << std::endl;
+						bool liked = 0;
+						for (int i = 0; i < (currentuser->getfollowedpages()[oned])->getpost(twod)->getlikers().size(); i++) {
+							liked = 1;
+							if (currentuser->getid() == (currentuser->getfollowedpages()[oned])->getpost(twod)->getlikers()[i]->getid()) {
+								(currentuser->getfollowedpages()[oned])->getpost(twod)->removeliker(i);
+
+								std::cout << "liker removed" << std::endl;
+								break;
+							}
+							if (i + 1 == (currentuser->getfollowedpages()[oned])->getpost(twod)->getlikers().size()) {
+								std::cout << "liker added" << std::endl;
+								(currentuser->getfollowedpages()[oned])->getpost(twod)->addliker(currentuser);
+								(currentuser->getfollowedpages()[oned])->getpost(twod)->setnooflikes((currentuser->getfriends()[oned])->getpost(twod)->getlikers().size());
+								break;
+
+
+							}
+						}
+						// dont this check function but seems important
+						if (liked == 0) {
+							//liked = 0;
+							std::cout << "liker added" << std::endl;
+							(currentuser->getfollowedpages()[oned])->getpost(twod)->addliker(currentuser);
+							(currentuser->getfollowedpages()[oned])->getpost(twod)->setnooflikes((currentuser->getfriends()[oned])->getpost(twod)->getlikers().size());
+						}
+
+					}
+					if (pagefeeddata[1]->intersect(plane, event)) {
+						std::cout << "click" << std::endl;
+						for (int i = 0; i < (currentuser->getfollowedpages()[oned])->getpost(twod)->getcomments().size(); i++) {
+							if (currentuser->getname() == (currentuser->getfollowedpages()[oned])->getpost(twod)->getcomments()[i]->getusername()) {
+								std::cout << "Already commented" << std::endl;
+								break;
+							}
+							if (i + 1 == (currentuser->getfollowedpages()[oned])->getpost(twod)->getcomments().size()) {
+								for (int i = 0; i < 50; i++) {
+									text[i] = '\0';
+								}
+								phase = 12;
+								break;
+							}
+						}
+						//dont know function
+						//please check and help
+						if ((currentuser->getfollowedpages()[oned])->getpost(twod)->getcomments().size() == 0) {
+							std::cout << "commenter added" << std::endl;
+							for (int i = 0; i < 50; i++) {
+								text[i] = '\0';
+							}
+							phase = 12;
+						}
+
+					}
+
+
+					//post
+					texter ids("Inter.ttf", (currentuser->getfollowedpages()[oned])->getname(), plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 10);
+					texter lel("Inter.ttf", (currentuser->getfollowedpages()[oned])->getposttext(twod), plane->getSize().x / 20, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 7);
+					plane->draw(ids.data());
+					plane->draw(lel.data());
+
+					//pictures
+					sf::Texture texture;
+					std::string a = "Resources\\Images\\";
+					std::string b = (currentuser->getfollowedpages()[oned])->getpostpicpath(twod);
+					a += b;
+					texture.loadFromFile(a);
+					sf::Sprite sprite;
+					sprite.setTexture(texture);
+					sf::FloatRect coords = sprite.getLocalBounds();
+					sprite.setOrigin(coords.width / 2, coords.height / 2);
+					sprite.setOrigin(150, 150);
+					sprite.setPosition(plane->getSize().x / 2, plane->getSize().y / 3);
+					plane->draw(sprite);
+				}
+				//comments
+				for (int i = 0; i < (currentuser->getfollowedpages()[oned])->getpost(twod)->getnoofcomments(); i++) {
+
+
+					std::string f = (currentuser->getfollowedpages()[oned])->getpost(twod)->getcomment(i)->getusername();
+					std::string h = " : ";
+					std::string l = (currentuser->getfollowedpages()[oned])->getpost(twod)->getcomment(i)->gettext();
+					f += h;
+					f += l;
+					texter cmt("Inter.ttf", f, plane->getSize().x / 40, 0, 0, 0, 255, plane->getSize().x / 3, i * 25 + 50 + plane->getSize().y / 2);
+					plane->draw(cmt.data());
+				}
+
+				//likes
+				for (int i = 0; i < (currentuser->getfollowedpages()[oned])->getpost(twod)->getlikers().size(); i++) {
+					texter like("Inter.ttf", (currentuser->getfollowedpages()[oned])->getpost(twod)->getlikers()[i]->getname(), plane->getSize().x / 40, 0, 0, 0, 255, plane->getSize().x * 0.85, i * 25 + 50 + plane->getSize().y / 2);
+					plane->draw(like.data());
+					//(currentuser->getfriends()[oned])->getpost(twod)->getlikers()[i]->getname();
+				}
+			}
+
+		}
+	}
+	if (event->text.unicode == sf::Keyboard::Escape) {
+		phase = 0;
+		oned = 0;
+		twod = 0;
+	}
+}
+
 
 void gui::home(sf::RenderWindow* plane, sf::Event* event, std::vector<button*> homedata, std::vector<texter*> hometext , char*text) {
 	plane->clear(sf::Color::White);
@@ -488,46 +767,90 @@ void gui::home(sf::RenderWindow* plane, sf::Event* event, std::vector<button*> h
 	}
 	}
 
-void gui::releasedata(std::vector<user*> data) {
-	std::cout << "Saving User Data" << std::endl << std::endl;
-	std::ofstream file;
-	file.open("users.txt",std::ofstream::trunc);
-	file<<data[0]->getnoofusers();
-	file << std::endl << std::endl;
-	for (int i = 0; i < data[0]->getnoofusers(); i++) {
-		file << data[i]->getid() << std::endl;
-		file << data[i]->getname() << std::endl;
-		file << data[i]->getnooffriends() << std::endl;
-		file << data[i]->getnoofposts() << std::endl << std::endl;
+void gui::releasedata(std::vector<user*> data, std::vector<page*>& server) {
+
+	//users
+	{
+		std::cout << "Saving User Data" << std::endl << std::endl;
+		std::ofstream file;
+		file.open("users.txt", std::ofstream::trunc);
+		file << data[0]->getnoofusers();
+		file << std::endl << std::endl;
+		for (int i = 0; i < data[0]->getnoofusers(); i++) {
+			file << data[i]->getid() << std::endl;
+			file << data[i]->getname() << std::endl;
+			file << data[i]->getnooffriends() << std::endl;
+			file << data[i]->getnoofposts() << std::endl;
+			file << data[i]->getnooffollowedpages() << std::endl << std::endl;
+		}
+		for (int i = 0; i < data[0]->getnoofusers(); i++) {
+			for (int j = 0; j < data[i]->getnooffriends(); j++) {
+				file << data[i]->getfriends()[j]->getid() << std::endl;
+			}
+		}
+		file << std::endl;
+		for (int i = 0; i < data[0]->getnoofusers(); i++) {
+			for (int j = 0; j < data[i]->getnoofposts(); j++) {
+				file << data[i]->getpostid(j) << std::endl;
+				file << data[i]->getposttext(j) << std::endl;
+				file << data[i]->getpostdate(j) << std::endl;
+				file << data[i]->getpostpicpath(j) << std::endl;
+				file << data[i]->getposts()[j]->getnoofcomments() << std::endl;
+				for (int k = 0; k < data[i]->getposts()[j]->getcomments().size(); k++) {
+					file << data[i]->getpost(j)->getcomment(k)->getusername() << std::endl;
+					file << data[i]->getpost(j)->getcomment(k)->gettext() << std::endl;
+				}
+				file << data[i]->getpost(j)->getnooflikes() << std::endl;
+				for (int q = 0; q < data[i]->getpost(j)->getlikers().size(); q++) {
+					file << data[i]->getpost(j)->getlikers()[q]->getid() << std::endl;
+				}
+				file << std::endl;
+
+			}
+		}
+
+
+		for (int i = 0; i < data[0]->getnoofusers(); i++) {
+			for (int j = 0; j < data[i]->getnooffollowedpages(); j++) {
+				file << data[i]->getfollowedpages()[j]->getid() << std::endl;
+			}
+		}
+		file.close();
+
+		std::cout << "User Data completely saved" << std::endl << std::endl;
 	}
-	for (int i = 0; i < data[0]->getnoofusers(); i++) {
-		for (int j = 0; j < data[i]->getnooffriends(); j++) {
-			file << data[i]->getfriends()[j]->getid() << std::endl;
+
+	//pages
+	{
+		//pages
+		std::ofstream file;
+		file.open("pages.txt", std::ofstream::trunc);
+		file << server[0]->getnoofpages() << std::endl << std::endl;
+		for (int i = 0; i < server[0]->getnoofpages(); i++) {
+			file << server[i]->getid() << std::endl;
+			file << server[i]->getname() << std::endl;
+			file << server[i]->getnoofposts() << std::endl << std::endl;
+		}
+		//posts
+		for (int i = 0; i < server[0]->getnoofpages(); i++) {
+			for (int j = 0; j < server[i]->getnoofposts(); j++) {
+				file << server[i]->getpostid(j) << std::endl;
+				file << server[i]->getposttext(j) << std::endl;
+				file << server[i]->getpostdate(j) << std::endl;
+				file << server[i]->getpostpicpath(j) << std::endl;
+				file << server[i]->getposts()[j]->getnoofcomments() << std::endl;
+				for (int k = 0; k < server[i]->getposts()[j]->getcomments().size(); k++) {
+					file << server[i]->getpost(j)->getcomment(k)->getusername() << std::endl;
+					file << server[i]->getpost(j)->getcomment(k)->gettext() << std::endl;
+				}
+				file << server[i]->getpost(j)->getnooflikes() << std::endl;
+				for (int q = 0; q < server[i]->getpost(j)->getnooflikes(); q++) {
+					file << server[i]->getpost(j)->getlikers()[q]->getid() << std::endl;
+				}
+				file << std::endl;
+			}
 		}
 	}
-	file << std::endl;
-	for (int i = 0; i < data[0]->getnoofusers(); i++) {
-		for (int j = 0; j < data[i]->getnoofposts(); j++) {
-			file << data[i]->getpostid(j) << std::endl;
-			file << data[i]->getposttext(j) << std::endl;
-			file << data[i]->getpostdate(j) << std::endl;
-			file << data[i]->getpostpicpath(j) << std::endl;
-			file << data[i]->getposts()[j]->getnoofcomments() << std::endl;
-			for (int k = 0; k < data[i]->getposts()[j]->getcomments().size(); k++) {
-				file << data[i]->getpost(j)->getcomment(k)->getusername() << std::endl;
-				file << data[i]->getpost(j)->getcomment(k)->gettext() << std::endl;
-			}
-			file << data[i]->getpost(j)->getnooflikes() << std::endl;
-			for (int q = 0; q < data[i]->getpost(j)->getlikers().size(); q++) {
-				file << data[i]->getpost(j)->getlikers()[q]->getid() << std::endl;
-			}
-			file << std::endl;
-
-		}
-	}
-	file.close();
-
-	std::cout << "User Data completely saved" << std::endl << std::endl;
 }
 
 void gui::selectuser(sf::RenderWindow* plane, sf::Event* event, std::vector<user*> & data  , std::vector<button*> selectuserdata, std::vector<texter*> selectusertext, char* text) {
@@ -713,6 +1036,79 @@ void gui::searchfriend(sf::RenderWindow* plane, sf::Event* event, std::vector<us
 			phase = 0;
 		}
 		phase = 0;
+	}
+	std::string a;
+	char lol[50] = {};
+	int i = 0;
+	for (i = 0; text[i] != '\0'; i++) {
+		lol[i] = text[i];
+	}
+	lol[i] = '\0';
+	textbox > plane;
+	texter writer("Inter.ttf", lol, plane->getSize().x / 15, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 2);
+	plane->draw(writer.data());
+}
+
+void gui :: pageadder(sf::RenderWindow* plane, sf::Event* event, std::vector<page*>& server, char* text, std::string& g) {
+	plane->clear(sf::Color::White);
+	texter enter("Inter.ttf", "Enter Page ID", 75, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 5);
+	plane->draw(enter.data());
+	button textbox("textbox.png", 350, 100, plane->getSize().x / 2, plane->getSize().y / 2, 3.3, 2.5);
+	if (textbox.write(plane, event, text)) {
+		g = text;
+			for (int i = 0; i < currentuser->getfollowedpages().size(); i++) {
+				if (g == currentuser->getfollowedpages()[i]->getid()) {
+					std::cout << "Page is already added" << std::endl;
+					phase = 0;
+					break;
+				}
+				if (i + 1 == currentuser->getfollowedpages().size()) {
+					for (int i = 0; i < server.size(); i++) {
+						if (g == server[i]->getid()) {
+							currentuser->addpage(server[i]);
+							currentuser->setnooffollowedpages(currentuser->getfollowedpages().size());
+							std::cout << "Page added" << std::endl;
+							phase = 0;
+							break;
+						}
+					}
+				}
+			}
+			if (currentuser->getfollowedpages().size() == 0) {
+				for (int i = 0; i < server.size(); i++) {
+					if (g == server[i]->getid()) {
+						currentuser->addpage(server[i]);
+						currentuser->setnooffollowedpages(currentuser->getfollowedpages().size());
+						std::cout << "Page added" << std::endl;
+						phase = 0;
+					}
+				}
+			}
+			phase = 0;
+	}
+	std::string a;
+	char lol[50] = {};
+	int i = 0;
+	for (i = 0; text[i] != '\0'; i++) {
+		lol[i] = text[i];
+	}
+	lol[i] = '\0';
+	textbox > plane;
+	texter writer("Inter.ttf", lol, plane->getSize().x / 15, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 2);
+	plane->draw(writer.data());
+}
+
+void gui::pagecomment(sf::RenderWindow* plane, sf::Event* event, char* text, std::string& c) {
+	plane->clear(sf::Color::White);
+	texter enter("Inter.ttf", "Enter Comment", 75, 0, 0, 0, 255, plane->getSize().x / 2, plane->getSize().y / 5);
+	plane->draw(enter.data());
+	button textbox("textbox.png", 350, 100, plane->getSize().x / 2, plane->getSize().y / 2, 3.3, 2.5);
+	if (textbox.write(plane, event, text)) {
+		c = text;
+		(currentuser->getfollowedpages()[oned])->getpost(twod)->addcomment(currentuser->getname(), c);
+		(currentuser->getfollowedpages()[oned])->getpost(twod)->setnoofcomments((currentuser->getfollowedpages()[oned])->getpost(twod)->getcomments().size());
+		//adduser(data, b, c);
+		phase = 7;
 	}
 	std::string a;
 	char lol[50] = {};
