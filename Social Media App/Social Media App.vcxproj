@@ -136,8 +136,12 @@
     <ClCompile Include="Main Code.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AdderCode.h" />
     <ClInclude Include="Drawer.h" />
-    <ClInclude Include="Phases.h" />
+    <ClInclude Include="Feeds.h" />
+    <ClInclude Include="Graphicsloader.h" />
+    <ClInclude Include="Gui.h" />
+    <ClInclude Include="Guifilehandlers.h" />
     <ClInclude Include="Structure.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

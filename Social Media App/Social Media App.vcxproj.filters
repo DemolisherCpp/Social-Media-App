@@ -23,10 +23,22 @@
     <ClInclude Include="Drawer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Phases.h">
+    <ClInclude Include="Gui.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Structure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Guifilehandlers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdderCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Feeds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphicsloader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

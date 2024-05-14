@@ -1,7 +1,7 @@
 #ifndef STRUCTURE_H
 #define STRUCTURE_H
 
-#include<Phases.h>
+#include<Gui.h>
 #include <iostream>
 #include<vector>
 

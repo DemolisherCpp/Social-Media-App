@@ -1,5 +1,8 @@
 #include <iostream>
-#include<Phases.h>
+#include <Guifilehandlers.h>
+#include <AdderCode.h>
+#include <Feeds.h>
+#include <Graphicsloader.h>
 #include<vector>
 #include <SFML/Graphics.hpp>
 

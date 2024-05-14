@@ -6,517 +6,517 @@ C:\Users\momer\source\repos\Social-Media-App\Social Media App\Drawer.h(123,29): 
 C:\Users\momer\source\repos\Social-Media-App\Social Media App\Drawer.h(124,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\momer\source\repos\Social-Media-App\Social Media App\Drawer.h(124,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\momer\source\repos\Social-Media-App\Social Media App\Structure.h(124,25): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(45,156): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(45,117): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(45,90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(45,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(46,161): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(46,155): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(46,148): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(46,120): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(46,93): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(46,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(47,158): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(47,152): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(47,145): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(47,117): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(47,90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(47,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(48,145): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(48,117): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(48,90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(48,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(49,148): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(49,122): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(49,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(49,68): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(50,147): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(50,120): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(50,93): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(50,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(51,144): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(51,117): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(51,90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(51,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(52,202): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(52,125): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(52,87): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(53,201): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(53,124): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(53,86): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(57,158): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Gui.h(55,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Gui.h(89,133): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(57,134): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Gui.h(89,109): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(57,85): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(62,276): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(62,271): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(62,198): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(62,163): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(62,107): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(62,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(63,256): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(63,175): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(63,108): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(70,179): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(70,173): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(70,103): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(70,68): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(73,146): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Gui.h(89,60): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Gui.h(93,151): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Gui.h(93,114): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(73,122): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Gui.h(94,192): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Gui.h(94,119): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(73,73): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(74,142): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(13,102): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(74,118): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(13,78): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(75,141): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(15,90): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(30,95): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(75,116): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(76,157): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(76,152): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(76,145): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(76,117): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(76,90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(76,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(77,160): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(77,155): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(77,148): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(77,120): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(77,93): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(77,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(80,150): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(30,71): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(80,126): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(35,104): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(80,77): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(81,142): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(35,80): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(81,118): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(37,91): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(52,96): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(82,142): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(52,72): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(82,116): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(83,173): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(83,167): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(83,97): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(83,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(86,150): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(60,106): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(86,126): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(60,82): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(86,77): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(87,146): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(62,90): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(66,137): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(78,116): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(87,122): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(78,92): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(88,146): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(84,106): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(88,120): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(89,161): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(89,156): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(89,149): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(89,121): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(89,94): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(89,67): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(90,164): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(90,159): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(90,152): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(90,124): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(90,97): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(90,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(318,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(352,133): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(84,82): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(352,109): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(86,90): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(100,66): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(112,65): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(130,116): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(352,60): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(356,151): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(356,114): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(130,92): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(357,192): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(357,119): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(138,107): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(431,138): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(442,137): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(475,158): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(138,83): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(475,134): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(140,90): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(155,116): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(476,166): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(155,92): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(476,142): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(160,112): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(491,68): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(160,88): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(491,44): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(162,91): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(166,58): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(178,117): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(503,108): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(178,93): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(503,91): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(185,106): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(509,186): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(185,82): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(509,167): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(591,144): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(602,143): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(635,164): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(187,90): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(200,77): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(212,76): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(228,116): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(635,140): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(228,92): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(636,172): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(234,106): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(636,148): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(234,82): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(651,68): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(236,90): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(240,149): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(252,116): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(651,44): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\AdderCode.h(252,92): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(663,108): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(73,138): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(84,137): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(117,158): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(663,91): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(117,134): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(669,192): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(118,166): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(669,172): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(721,134): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(118,142): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(721,110): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(133,68): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(722,142): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(133,44): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(722,118): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(145,108): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(737,66): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(145,91): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(737,42): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(151,186): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(750,107): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(151,166): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(233,144): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(244,143): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(277,164): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(750,90): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(277,140): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(756,163): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(278,172): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(756,143): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(883,102): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(278,148): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(883,78): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(293,68): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(885,90): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(900,95): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(293,44): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(900,71): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(305,108): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(905,104): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(305,91): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(905,80): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(311,192): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(907,91): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(922,96): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(311,172): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(362,134): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(922,72): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(362,110): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(929,106): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(363,142): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(929,82): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(363,118): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(931,90): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(935,137): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(947,114): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(378,66): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(947,90): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(378,42): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(955,107): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(391,107): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(955,83): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(391,90): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(957,90): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(972,116): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(397,163): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(972,92): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Feeds.h(397,143): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(13,156): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(13,117): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(13,90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(13,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(14,161): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(14,155): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(14,148): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(14,120): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(14,93): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(14,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(15,158): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(15,152): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(15,145): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(15,117): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(15,90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(15,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(16,145): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(16,117): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(16,90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(16,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(17,149): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(17,122): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(17,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(17,68): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(18,147): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(18,120): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(18,93): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(18,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(19,144): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(19,117): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(19,90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(19,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(20,202): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(20,125): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(20,87): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(21,201): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(21,124): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(21,86): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(25,158): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(977,112): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(25,134): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(977,88): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(25,85): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(30,276): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(30,271): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(30,198): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(30,163): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(30,107): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(30,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(31,256): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(31,175): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(31,108): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(38,179): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(38,173): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(38,103): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(38,68): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(41,146): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(979,91): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(983,58): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(995,117): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(41,122): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(995,93): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(41,73): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(42,142): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1002,106): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(42,118): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1002,82): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(43,142): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1004,90): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1018,66): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1030,65): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1048,116): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(43,116): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(44,157): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(44,152): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(44,145): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(44,117): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(44,90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(44,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(45,160): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(45,155): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(45,148): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(45,120): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(45,93): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(45,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(48,150): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1048,92): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(48,126): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1054,106): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(48,77): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(49,142): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1054,82): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(49,118): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1056,90): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1069,78): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1081,77): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1097,116): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(50,142): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1097,92): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(50,116): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(51,173): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(51,167): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(51,97): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(51,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(54,150): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1103,106): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(54,126): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1103,82): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(54,77): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(55,146): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1105,90): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1109,149): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1121,116): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(55,122): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Phases.h(1121,92): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(56,146): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\momer\source\repos\Social-Media-App\Social Media App\Main Code.cpp(35,74): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(56,120): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(57,161): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(57,156): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(57,149): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(57,121): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(57,94): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(57,67): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(58,164): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(58,159): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(58,152): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(58,124): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(58,97): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Graphicsloader.h(58,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\momer\source\repos\Social-Media-App\Social Media App\Main Code.cpp(38,74): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
   Social Media App.vcxproj -> C:\Users\momer\source\repos\Social-Media-App\x64\Debug\Social Media App.exe
